@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Manikarnika Ghat - Home</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="responsive.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    .hero-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .overview-text {
+      line-height: 1.8;
+      color: #333;
+    }
+
+    .button {
+      padding: 10px 20px;
+      border-radius: 8px;
+      background: #272643;
+      color: #fff;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .button:hover {
+      background: #51557E;
+    }
+
+    .overview-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-right: 15px;
+    }
+
+    .hero-buttons {
+      margin-top: 20px;
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: #272643;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      border-radius: 50%;
+      display: none;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    .back-to-top:hover {
+      background: #51557E;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">🕉️ Manikarnika Ghat</a>
+      </div>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="history.html" class="nav-link">History</a></li>
+          <li><a href="information.html" class="nav-link">Information</a></li>
+          <li><a href="rituals.html" class="nav-link">Rituals</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="video.html" class="nav-link">Video</a></li>
+          <li><a href="location.html" class="nav-link">Location</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="queries.html" class="nav-link">Queries</a></li>
+          <li><a href="login.html" class="nav-link">Login</a></li>
+          <li><a href="register.html" class="nav-link">Register</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero main-hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">Welcome to Manikarnika Ghat</h1>
+        <p class="hero-description">A sacred cremation ground in Varanasi, where spirituality meets eternity.</p>
+        <div class="hero-buttons">
+          <a href="history.html" class="button hero-button">Explore History</a>
+          <a href="rituals.html" class="button hero-button">Learn Rituals</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Overview -->
+  <section class="overview main-overview">
+    <div class="container">
+      <h2 class="overview-title">About Manikarnika Ghat</h2>
+      <p class="overview-text">
+        Manikarnika Ghat is one of the oldest and most sacred ghats along the Ganges in Varanasi. Deeply connected to the cycle of life and death, this ghat is believed to offer moksha (liberation) to souls who are cremated here. The ever-burning flame symbolizes the eternal nature of the soul.
+      </p>
+      <div class="quick-links overview-links">
+        <a href="gallery.html" class="button overview-link"><i class="fas fa-images"></i> Gallery</a>
+        <a href="video.html" class="button overview-link"><i class="fas fa-video"></i> Videos</a>
+        <a href="location.html" class="button overview-link"><i class="fas fa-map-marker-alt"></i> Location</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="information.html">Information</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3 class="footer-title">Connect With Us</h3>
+          <ul class="social-links">
+            <li><a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#" class="social-icon"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" class="social-icon"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#" class="social-icon"><i class="fab fa-youtube"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3 class="footer-title">Contact Info</h3>
+          <p>Varanasi, India</p>
+          <p>Email: info1234@gmail.com</p>
+          <p>Phone: +91 9648679074</p>
+        </div>
+      </div>
+      <p class="footer-text">&copy; 2025 Manikarnika Ghat | Developed by Dhanish, Prakhar, Harsh</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="back-to-top" class="back-to-top"><i class="fas fa-arrow-up"></i></button>
+
+  <script>
+    // Smooth scroll to top
+    const btn = document.getElementById('back-to-top');
+    window.onscroll = () => {
+      btn.style.display = window.scrollY > 100 ? 'block' : 'none';
+    };
+    btn.onclick = () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script>
+</body>
+</html>

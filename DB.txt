@@ -1,0 +1,21 @@
+create database manikarnika;
+use manikarnika;
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    email VARCHAR(100) UNIQUE,
+    password VARCHAR(100)
+);
+CREATE TABLE contact (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    email VARCHAR(100),
+    message TEXT
+);
+insert into users(name)
+values('Rahul')
+, ('Rohan');
+
+select * from users where id in(14,15);
+select *from users;
+select *from contact;

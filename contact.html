@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Manikarnika Ghat - Contact</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="responsive.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 30px;
+      color: #272643;
+    }
+
+    .contact-section {
+      padding: 40px 0;
+    }
+
+    .contact-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .contact-form, .contact-info {
+      flex: 1 1 350px;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    .form-group input, .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    .submit-button {
+      background-color: #272643;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .submit-button:hover {
+      background-color: #51557E;
+    }
+
+    .info-title {
+      font-size: 1.4rem;
+      margin-bottom: 15px;
+      color: #272643;
+    }
+
+    .contact-info p {
+      margin: 10px 0;
+      color: #444;
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: #272643;
+      color: #fff;
+      border: none;
+      padding: 12px;
+      border-radius: 50%;
+      display: none;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    .back-to-top:hover {
+      background: #51557E;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="main-header">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">🕉️ Manikarnika Ghat</a>
+      </div>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="history.html" class="nav-link">History</a></li>
+          <li><a href="information.html" class="nav-link">Information</a></li>
+          <li><a href="rituals.html" class="nav-link">Rituals</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="video.html" class="nav-link">Video</a></li>
+          <li><a href="location.html" class="nav-link">Location</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+          <li><a href="queries.html" class="nav-link">Queries</a></li>
+          <li><a href="login.html" class="nav-link">Login</a></li>
+          <li><a href="register.html" class="nav-link">Register</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+  <main class="main-content">
+    <section class="contact-section">
+      <div class="container">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="contact-content">
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="Your Email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">Submit</button>
+          </form>
+
+          <div class="contact-info">
+            <h3 class="info-title">Contact Information</h3>
+            <p><i class="fas fa-envelope"></i> Email: info@manikarnikaghat.com</p>
+            <p><i class="fas fa-phone"></i> Phone: +91 123 456 7890</p>
+            <p><i class="fas fa-map-marker-alt"></i> Address: Manikarnika Ghat, Varanasi, India</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="information.html">Information</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3 class="footer-title">Connect With Us</h3>
+          <ul class="social-links">
+            <li><a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#" class="social-icon"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" class="social-icon"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#" class="social-icon"><i class="fab fa-youtube"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3 class="footer-title">Contact Info</h3>
+          <p>Varanasi, India</p>
+          <p>Email: info1234@gmail.com</p>
+          <p>Phone: +91 9648679074</p>
+        </div>
+      </div>
+      <p class="footer-text">&copy; 2025 Manikarnika Ghat | Developed by Dhanish, Prakhar, Harsh</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script>
+    const btn = document.getElementById('back-to-top');
+    window.onscroll = () => {
+      btn.style.display = window.scrollY > 100 ? 'block' : 'none';
+    };
+    btn.onclick = () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
+    document.getElementById('contactForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+
+      const data = {
+        name: document.getElementById('name').value,
+        email: document.getElementById('email').value,
+        message: document.getElementById('message').value,
+      };
+
+      const res = await fetch('http://localhost:5000/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+
+      const result = await res.json();
+      alert(result.message);
+    });
+  </script>
+
+</body>
+</html>

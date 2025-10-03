@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manikarnika Ghat - Video</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- Font Awesome for icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">🕉️ Manikarnika Ghat</a>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="history.html" class="nav-link">History</a></li>
+                    <li><a href="information.html" class="nav-link">Information</a></li>
+                    <li><a href="rituals.html" class="nav-link">Rituals</a></li>
+                    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                    <li><a href="video.html" class="nav-link active">Video</a></li>
+                    <li><a href="location.html" class="nav-link">Location</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="queries.html" class="nav-link">Queries</a></li>
+                    <li><a href="login.html" class="nav-link">Login</a></li>
+                    <li><a href="register.html" class="nav-link">Register</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Video Section -->
+    <main class="main-content">
+        <section class="video-section">
+            <div class="container">
+                <h2 class="section-title">Videos of Manikarnika Ghat</h2>
+                <div class="video-grid">
+                    <div class="video-item">
+                        <iframe width="732" height="412" src="https://www.youtube.com/embed/isBmKN6qqec" title="मणिकर्णिका घाट महाश्मशान पर  दिव्य कुंड जहाँ गिरा था माता पार्वती का कुंडल॥ Manikarnika Ghat" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-item">
+                        <iframe width="732" height="412" src="https://www.youtube.com/embed/ZF_kX6Ux-pA" title="Manikarnika Ghat Banaras ! Manikarnika Ghat Varanasi | मणिकर्णिका घाट काशी जहाँ से मिलता है मोक्ष" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-item">
+                        <iframe width="732" height="412" src="https://www.youtube.com/embed/H-ey-FGvX9I" title="Visiting Temple Of Death In Varanasi - Vlog 64" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="information.html">Information</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Connect With Us</h3>
+                    <ul class="social-links">
+                        <li><a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#" class="social-icon"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#" class="social-icon"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#" class="social-icon"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact Info</h3>
+                    <p>Varanasi, India</p>
+                    <p>Email: info1234@gmail.com</p>
+                    <p>Phone: +91 9648679074</p>
+                </div>
+            </div>
+            <p class="footer-text">&copy; 2025 Manikarnika Ghat | Developed by Dhanish, Prakhar, Harsh</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        const btn = document.getElementById('back-to-top');
+        window.onscroll = () => {
+            btn.style.display = window.scrollY > 100 ? 'block' : 'none';
+        };
+        btn.onclick = () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+    </script>
+</body>
+</html>

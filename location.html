@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Manikarnika Ghat - Location</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="responsive.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 30px;
+      color: #272643;
+    }
+
+    .location-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-top: 30px;
+    }
+
+    .map-container {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .location-info {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .info-title {
+      font-size: 1.4rem;
+      color: #272643;
+      margin-top: 20px;
+    }
+
+    .info-text {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .directions-list {
+      padding-left: 20px;
+      margin-top: 10px;
+      list-style: disc;
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: #272643;
+      color: #fff;
+      border: none;
+      padding: 12px;
+      border-radius: 50%;
+      display: none;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    .back-to-top:hover {
+      background: #51557E;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="main-header">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">🕉️ Manikarnika Ghat</a>
+      </div>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="history.html" class="nav-link">History</a></li>
+          <li><a href="information.html" class="nav-link">Information</a></li>
+          <li><a href="rituals.html" class="nav-link">Rituals</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="video.html" class="nav-link">Video</a></li>
+          <li><a href="location.html" class="nav-link active">Location</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="queries.html" class="nav-link">Queries</a></li>
+          <li><a href="login.html" class="nav-link">Login</a></li>
+          <li><a href="register.html" class="nav-link">Register</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Location Section -->
+  <main class="main-content">
+    <section class="location-section">
+      <div class="container">
+        <h2 class="section-title">Location of Manikarnika Ghat</h2>
+        <div class="location-content">
+          <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.434857754179!2d83.00695017595304!3d25.31012977759247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e56db9786d1ef%3A0x1c8882a931065c71!2sManikarnika%20Ghat!5e0!3m2!1sen!2sin!4v1702741914288!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="location-info">
+            <h3 class="info-title">Address</h3>
+            <p class="info-text">Manikarnika Ghat, Varanasi, Uttar Pradesh, India</p>
+            <h3 class="info-title">Directions</h3>
+            <p class="info-text">
+              Manikarnika Ghat is located on the banks of the Ganges River in Varanasi. It is easily accessible by road and boat. Here are some common starting points:
+            </p>
+            <ul class="directions-list">
+              <li><strong>From Varanasi Junction:</strong> Taxi/Auto (approx. 4 km)</li>
+              <li><strong>From Airport:</strong> Taxi (approx. 25 km)</li>
+              <li><strong>By Boat:</strong> From Dashashwamedh Ghat to Manikarnika Ghat</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="information.html">Information</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3 class="footer-title">Connect With Us</h3>
+          <ul class="social-links">
+            <li><a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#" class="social-icon"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" class="social-icon"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#" class="social-icon"><i class="fab fa-youtube"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3 class="footer-title">Contact Info</h3>
+          <p>Varanasi, India</p>
+          <p>Email: info1234@gmail.com</p>
+          <p>Phone: +91 9648679074</p>
+        </div>
+      </div>
+      <p class="footer-text">&copy; 2025 Manikarnika Ghat | Developed by Dhanish, Prakhar, Harsh</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script>
+    const btn = document.getElementById('back-to-top');
+    window.onscroll = () => {
+      btn.style.display = window.scrollY > 100 ? 'block' : 'none';
+    };
+    btn.onclick = () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script>
+
+</body>
+</html>

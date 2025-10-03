@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manikarnika Ghat - Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- Font Awesome for icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #272643;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #272643;
+            color: #fff;
+            border: none;
+            padding: 12px;
+            border-radius: 50%;
+            display: none;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        .back-to-top:hover {
+            background: #51557E;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">🕉️ Manikarnika Ghat</a>
+            </div>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="history.html" class="nav-link">History</a></li>
+                    <li><a href="information.html" class="nav-link">Information</a></li>
+                    <li><a href="rituals.html" class="nav-link">Rituals</a></li>
+                    <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                    <li><a href="video.html" class="nav-link">Video</a></li>
+                    <li><a href="location.html" class="nav-link">Location</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="queries.html" class="nav-link">Queries</a></li>
+                    <li><a href="login.html" class="nav-link">Login</a></li>
+                    <li><a href="register.html" class="nav-link">Register</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Gallery Section -->
+    <main class="main-content">
+        <section class="gallery-section">
+            <div class="container">
+                <h2 class="section-title">Gallery</h2>
+                <div class="image-grid">
+                    <div class="image-item">
+                        <img src="https://www.jagranimages.com/images/newimg/04052022/Pushkarni%20Kund1.jpg">
+                    </div>
+                    <div class="image-item">
+                        <img src="https://www.jagranimages.com/images/newimg/04052022/Pushkarni%20Kund5.jpg" alt="Manikarnika Ghat 2" class="lightbox-trigger">
+                    </div>
+                    <div class="image-item">
+                        <img src="https://www.jagranimages.com/images/newimg/04052022/Pushkarni%20Kund5.jpg" alt="Manikarnika Ghat 3" class="lightbox-trigger">
+                    </div>
+                    <div class="image-item">
+                        <img src="https://www.jagranimages.com/images/newimg/04052022/Pushkarni%20Kund4.jpg" alt="Manikarnika Ghat 4" class="lightbox-trigger">
+                    </div>
+                    <div class="image-item">
+                        <img src="https://livevns.news/static/c1e/client/84451/uploaded/b1b9bf407262e36b65a8dc8a6d1702dd.jpg" alt="Manikarnika Ghat 5" class="lightbox-trigger">
+                    </div>
+                    <div class="image-item">
+                        <img src="https://www.ramadajhvvns.com/blog/wp-content/uploads/2018/02/1-2.jpg" alt="Manikarnika Ghat 6" class="lightbox-trigger">
+                    </div>
+                    <div class="image-item">
+                        <img src="https://scontent.fvns6-2.fna.fbcdn.net/v/t39.30808-6/484171043_29869437025988441_7746603928311839849_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=zqUmjcW65TYQ7kNvgETav2l&_nc_oc=Adnuv1vq--pRhdHlMPM4vRyneoNcGvbWFyPok8vy5S6bebalKZhVxakBclZ5ll6GMnZ76ghNnECAHpC5wBEJXndH&_nc_zt=23&_nc_ht=scontent.fvns6-2.fna&_nc_gid=VZ2T0urxDXEAK9flwcP3wA&oh=00_AYE9Qxyar79BDQtO2L3iLYJiLfEdD9rdnGEqLpp1JmYCtg&oe=67E01BF3">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox for Full-Screen Images -->
+    <div class="lightbox" id="lightbox">
+        <span class="close" id="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="information.html">Information</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Connect With Us</h3>
+                    <ul class="social-links">
+                        <li><a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#" class="social-icon"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#" class="social-icon"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#" class="social-icon"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact Info</h3>
+                    <p>Varanasi, India</p>
+                    <p>Email: info1234@gmail.com</p>
+                    <p>Phone: +91 9648679074</p>
+                </div>
+            </div>
+            <p class="footer-text">&copy; 2025 Manikarnika Ghat | Developed by Dhanish, Prakhar, Harsh</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        const btn = document.getElementById('back-to-top');
+        window.onscroll = () => {
+            btn.style.display = window.scrollY > 100 ? 'block' : 'none';
+        };
+        btn.onclick = () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        };
+    </script>
+
+</body>
+</html>

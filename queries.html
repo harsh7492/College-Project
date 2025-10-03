@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Manikarnika Ghat - Queries</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="responsive.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 30px;
+      color: #272643;
+    }
+
+    .faq .question {
+      background: #fff;
+      margin-bottom: 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+      overflow: hidden;
+      transition: all 0.3s ease;
+    }
+
+    .question-header {
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      background: #eaeaea;
+    }
+
+    .question-header h3 {
+      font-size: 1.2rem;
+      color: #272643;
+      margin: 0;
+    }
+
+    .toggle-icon {
+      transition: transform 0.3s ease;
+    }
+
+    .answer {
+      padding: 15px 20px;
+      display: none;
+      color: #444;
+      font-size: 1rem;
+    }
+
+    .question.active .answer {
+      display: block;
+    }
+
+    .question.active .toggle-icon {
+      transform: rotate(180deg);
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: #272643;
+      color: #fff;
+      border: none;
+      padding: 12px;
+      border-radius: 50%;
+      display: none;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    .back-to-top:hover {
+      background: #51557E;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="main-header">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">🕉️ Manikarnika Ghat</a>
+      </div>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="history.html" class="nav-link">History</a></li>
+          <li><a href="information.html" class="nav-link">Information</a></li>
+          <li><a href="rituals.html" class="nav-link">Rituals</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="video.html" class="nav-link">Video</a></li>
+          <li><a href="location.html" class="nav-link">Location</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="queries.html" class="nav-link active">Queries</a></li>
+          <li><a href="login.html" class="nav-link">Login</a></li>
+          <li><a href="register.html" class="nav-link">Register</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Queries Section -->
+  <main class="main-content">
+    <section class="queries-section">
+      <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq">
+          <!-- Repeatable FAQ Item -->
+          <div class="question">
+            <div class="question-header">
+              <h3>What is the significance of Manikarnika Ghat?</h3>
+              <i class="fas fa-chevron-down toggle-icon"></i>
+            </div>
+            <div class="answer">
+              <p>Manikarnika Ghat is considered one of the most sacred cremation grounds for Hindus. It is believed that those cremated here attain moksha, liberation from the cycle of rebirth.</p>
+            </div>
+          </div>
+
+          <div class="question">
+            <div class="question-header">
+              <h3>Can tourists visit Manikarnika Ghat?</h3>
+              <i class="fas fa-chevron-down toggle-icon"></i>
+            </div>
+            <div class="answer">
+              <p>Yes, tourists are welcome to visit, but it's essential to be respectful of the ongoing rituals and the sensitivity of the site.</p>
+            </div>
+          </div>
+
+          <div class="question">
+            <div class="question-header">
+              <h3>Who is the Dom Raja?</h3>
+              <i class="fas fa-chevron-down toggle-icon"></i>
+            </div>
+            <div class="answer">
+              <p>The Dom Raja is a member of the Dom community, responsible for maintaining the eternal flame and overseeing the cremations.</p>
+            </div>
+          </div>
+
+          <div class="question">
+            <div class="question-header">
+              <h3>Are there any restrictions for photography?</h3>
+              <i class="fas fa-chevron-down toggle-icon"></i>
+            </div>
+            <div class="answer">
+              <p>Photography is generally discouraged due to the sensitive nature of the site. It is recommended to ask for permission before taking any photos.</p>
+            </div>
+          </div>
+
+          <div class="question">
+            <div class="question-header">
+              <h3>How do I reach Manikarnika Ghat?</h3>
+              <i class="fas fa-chevron-down toggle-icon"></i>
+            </div>
+            <div class="answer">
+              <p>Manikarnika Ghat is located in Varanasi, Uttar Pradesh, India. You can reach it by auto-rickshaw or taxi from various parts of the city. More detailed directions are available on the location page.</p>
+            </div>
+          </div>
+
+          <div class="question">
+            <div class="question-header">
+              <h3>What is the time frame for cremations?</h3>
+              <i class="fas fa-chevron-down toggle-icon"></i>
+            </div>
+            <div class="answer">
+              <p>Cremations occur 24 hours a day, 7 days a week.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3 class="footer-title">Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="information.html">Information</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3 class="footer-title">Connect With Us</h3>
+          <ul class="social-links">
+            <li><a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#" class="social-icon"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" class="social-icon"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#" class="social-icon"><i class="fab fa-youtube"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3 class="footer-title">Contact Info</h3>
+          <p>Varanasi, India</p>
+          <p>Email: info1234@gmail.com</p>
+          <p>Phone: +91 9648679074</p>
+        </div>
+      </div>
+      <p class="footer-text">&copy; 2025 Manikarnika Ghat | Developed by Dhanish, Prakhar, Harsh</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script>
+    const questions = document.querySelectorAll('.question');
+    questions.forEach(q => {
+      q.querySelector('.question-header').addEventListener('click', () => {
+        q.classList.toggle('active');
+      });
+    });
+
+    const btn = document.getElementById('back-to-top');
+    window.onscroll = () => {
+      btn.style.display = window.scrollY > 100 ? 'block' : 'none';
+    };
+    btn.onclick = () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+  </script>
+
+</body>
+</html>
